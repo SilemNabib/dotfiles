@@ -1,27 +1,12 @@
-README.md
+README.md           # (repo) Ignore README
+docs/               # (repo) Ignore docs folder  
 
 **/*.log            # Ignore all .log files in any directory
 *.log               # Ignore .log files in the root directory
 
 .history.*          # Ignore all files starting with .history. in any directory
 **/.history.*       # Ignore all .history.* files in any directory
- 
-docs/
 
 {{- if eq .chezmoi.os "windows" }}
 zsh/
 {{- end }}
-
-# ================================================================================
-
-# Example of ignoring something when a condition is met
-{{- if ne .email "example.name@company.com" }}
-.company-directory  # Directory to ignore if condition is met
-{{- end}}  # End condition, remove trailing whitespace
-
-# ================================================================================
-
-# Example of ignoring something when a condition is met
-{{- if ne .email "example.name@company.com" }}
-.company-directory  # Directory to ignore if condition is met
-{{- end}}  # End condition, remove trailing whitespace
