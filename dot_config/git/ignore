@@ -1,0 +1,22 @@
+# Python specific
+.venv/
+.mypy_cache/
+.pytest_cache/
+__pycache__/
+.hypothesis/
+.ruff_cache/
+.ropeproject/
+
+# env
+.python-version
+.java-version
+.env*
+
+# editors
+.idea/
+.vscode/
+*.code-workspace
+
+# compile files
+*.log
+*.out
