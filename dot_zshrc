@@ -1,0 +1,8 @@
+source "$HOME/.config/zsh/zsh.conf"
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed2551
+
+export GIT_CONFIG_GLOBAL="$HOME/.config/git/config"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
